@@ -1,12 +1,12 @@
 import React, { useState, Component } from "react";
 import RocketCore from "./RocketCore";
 
-export function FunctionalRocket() {
+let FunctionalRocket = () => {
   const [initialLaunchTime] = useState(Date.now());
 
   return <RocketCore initialLaunchTime={initialLaunchTime} />;
-}
-FunctionalRocket = React.memo(FunctionalRocket); //purified component - wont take off.
+};
+export const MemodFunctionalRocket = React.memo(FunctionalRocket); //purified component - wont take off.
 
 export class ClassRocket extends Component {
   constructor() {

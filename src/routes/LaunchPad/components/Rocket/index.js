@@ -1,1 +1,1 @@
-export { FunctionalRocket, ClassRocket } from './components/Rocket';
+export { MemodFunctioncalRocket, ClassRocket } from "./components/Rocket";
